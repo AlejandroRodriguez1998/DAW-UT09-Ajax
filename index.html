@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Obligatorias -->
+    <title>Panda Streaming</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandro Paniagua Rodriguez">
+    <link rel="icon" href="img/panda.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Personalizado -->
+    <link rel="stylesheet" href="css/mi_css.css">
+
+</head>
+
+<body>
+    <div id="Principal">
+        <div class="text-center centrado-porcentual p-5" style="background-color:white; border-radius: 2%">
+            <h1 class="font-weight-light" style="color:#1C2833">¡Bienvenido a Panda Streaming!</h1>
+            <img src="img/banner.jpg" width="600" height="380" class="p-5">
+            <button class="btn btn-block botonMismoColor text-white" onclick="entrarEnPagina()">Entrar</button>
+        </div>
+    </div>
+    <div class="d-none" id="Secundario">
+        <header class="container-fluid">
+                <div class="container d-flex justify-content-center">
+                    <a href="index.html"><img src="img/logo.png" alt="Logo" width="100" height="100"></a>
+                    <p id="nombrePag" class="h1 font-weight-light">Panda Streaming</p>
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light container" id="menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" onclick="showHomePage()">Categorias <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="mostrarProduction()">Producciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showActors()">Actores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showDirectors()">Directores</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- COMIENZO CONTENIDO PRINCIPAL -->
+            <main class="container">
+                <div class="row">
+                    <!-- COLUMNA DEL MENU LAS CATEGORIAS-->
+                    <div id="columnaCategorias" class="col-md-3">
+                        <div id="botonAñadir">
+                            <button class="list-group-item btn btn-link w-100 mt-4" onclick="entrarAlSistema()">Gestión del
+                                sistema</button>
+                        </div>
+                        <h1 class="my-4">Categorias</h1>
+                        <div class="list-group">
+                            <!-- AQUI SE MUESTRA EL NOMBRE DE LAS CATEGORIAS DEL SISTEMA -->
+                        </div>
+                        <div id="contenedor">
+                            <div class="d-flex justify-content-center">
+                                <div class="reloj" id="Horas">00</div>
+                                <div class="reloj" id="Minutos">:00</div>
+                                <div class="reloj" id="Segundos">:00</div>
+                                <div class="reloj" id="Centesimas">:00</div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <input type="button" class="boton" id="inicio" value="" onclick="inicio();">
+                                <input type="button" class="boton mr-2 ml-2" id="parar" value="" onclick="parar();" disabled>
+                                <input type="button" class="boton" id="reinicio" value="" onclick="reinicio();" disabled>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- COLUMNA DEL CONTENIDO PRINCIPAL-->
+                    <div id="columnaContenido" class="col-md-9">
+                        <h1 id="tituloZona"></h1>
+                        <div id="tarjetasZona" class="row">
+                            <!-- AQUI SE MUESTRA TODA LA INFORMACION DE LA PAGINA -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <!-- Modal -->
+            <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/icono.png" alt="panda" style="width: 7%;">
+                        <h5 class="modal-title ml-1" id="exampleModalLabel">¡ADVERTENCIA!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 id="nombreBorrar" class="d-none"></h1>
+                        <p id="mostrarContenido"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn botonMismoColor text-white" data-dismiss="modal" id="aceptarBorrar">Aceptar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN CONTENIDO PRINCIPAL -->
+            <footer class="container-fluid py-3">
+                <div class="container d-flex justify-content-center">
+                    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+                </div>
+            </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Personalizado -->
+    <script src="js/Video System/BaseException.js"></script>
+    <script src="js/Video System/ObjectsVideoSystem.js"></script>
+    <script src="js/Video System/VideoSystem.js"></script>
+    <script src="js/DOM.js"></script>
+    <script src="js/BOM.js"></script>
+    <script src="js/Formulario.js"></script>
+    <script src="js/IndexDB.js"></script>
+    <script src="js/Ajax.js"></script>
+</body>
+</html>

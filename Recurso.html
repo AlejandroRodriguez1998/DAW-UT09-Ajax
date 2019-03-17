@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Práctica UT06 BOM</title>
+  <meta charset="UTF-8">
+	<meta name="author" content="Alejandro Paniagua Rodriguez">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/panda.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="css/mi_cssVentana.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="tituloZona"></h1>
+        <div id="contenidoZona">       
+      
+        </div>
+    </main>
+    <script>
+        function carga(){
+            //llama a la funcion de showResource de la ventana
+            window.opener.showResource();
+        }
+        window.onload = carga
+    </script>
+</body>
+</html>

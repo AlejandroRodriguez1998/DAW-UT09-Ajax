@@ -1,0 +1,229 @@
+{    
+	"AlmacenCategorias": [
+		{"Nombre": "Acción", "Descripcion": "El argumento implica una interacción moral entre e…vada a su fin por la violencia o la fuerza física"},
+		{"Nombre": "Animacion", "Descripcion": "Se caracteriza por no recurrir a la técnica del ro…nes reales sino a una o más técnicas de animación"},
+		{"Nombre": "Ciencia Ficción", "Descripcion": "Se basa en un futuro cercano o muy lejano, donde s… la tecnología y como ejecuta este en la historia"},
+		{"Nombre": "Comedia", "Descripcion": "Películas realizadas con la intención de provocar humor, entretenimiento y/o risa en el espectador."},
+		{"Nombre": "Drama", "Descripcion": "Se centran principalmente en el desarrollo de un c…o del protagonista con su entorno o consigo mismo"},
+		{"Nombre": "Fantasía", "Descripcion": "La inexistencia de la tecnología nos da a entender…una explicación lógica forman parte de este mundo"},
+		{"Nombre": "Musical", "Descripcion": "Contienen interrupciones en su desarrollo, para da…musical cantado o acompañados de una coreografía."},
+		{"Nombre": "Romance", "Descripcion": "Un desarrollo romántico o amoroso entre dos personas."},
+		{"Nombre": "Terror", "Descripcion": "Realizadas con la intención de provocar tensión, miedo y/o el sobresalto en la audiencia."}
+	],
+
+	"AlmacenActores": [
+		{"Nombre": "Alejandro", "Apellido1": "Paniagua", "Apellido2": "Rodriguez", "Nacimiento": "Mon Aug 31 1998 00:00:00 GMT+0200 (hora de verano de Europa central)", "Imagen": ""},
+		{"Nombre": "Angelina", "Apellido1": "Jolie", "Apellido2": "Voight", "Nacimiento": "Mon Jul 14 1997 00:00:00 GMT+0200 (hora de verano de Europa central)", "Imagen": "img/jolie.jpg"},
+		{"Nombre": "Jessica", "Apellido1": "Lange", "Apellido2": "", "Nacimiento": "Fri Oct 25 1963 00:00:00 GMT+0100 (hora de verano de Europa central)", "Imagen": ""},
+		{"Nombre": "Johnny", "Apellido1": "Depp", "Apellido2": "II", "Nacimiento": "Sun Oct 25 1964 00:00:00 GMT+0100 (hora de verano de Europa central)", "Imagen": ""},
+		{"Nombre": "Sandra", "Apellido1": "Bullock", "Apellido2": "", "Nacimiento": "Wed Aug 26 1964 00:00:00 GMT+0100 (hora de verano de Europa central)", "Imagen": ""},
+		{"Nombre": "Tom", "Apellido1": "Cruise", "Apellido2": "", "Nacimiento": "Tue Feb 25 1997 00:00:00 GMT+0100 (hora estándar de Europa central)", "Imagen": ""}
+	],
+
+	"AlmacenDirectores": [
+		{"Nombre": "Brad", "Apellido1": "Pitt", "Apellido2": "", "Nacimiento": "Mon Oct 25 1993 00:00:00 GMT+0100 (hora estándar de Europa central)", "Imagen": ""},
+		{"Nombre": "Evan", "Apellido1": "Peters", "Apellido2": "Junior", "Nacimiento": "Mon Oct 25 1943 00:00:00 GMT+0100 (hora de verano de Europa central)", "Imagen": ""},
+		{"Nombre": "Keanu", "Apellido1": "Reeves", "Apellido2": "", "Nacimiento": "Sun Feb 25 1945 00:00:00 GMT+0100 (hora estándar de Europa central)", "Imagen": ""}
+	],
+
+	"AlmacenUsuarios": [
+		{"Usuario": "Alec", "Email": "alec@google.com", "Contraseña": "alec1998"},
+		{"Usuario": "Pepito", "Email": "superpepito@yahoo.com", "Contraseña": "pepitito"},
+		{"Usuario": "prueba", "Email": "ivan@hotmail.com", "Contraseña": "prueba"}
+	],
+
+	"AlmacenAsignarCategorias": [ 
+		{"Categoria": "Comedia", "Producciones": ["Vengadores","Tomb Raider","Cazafantasmas"] },
+		{"Categoria": "Romance", "Producciones": ["Diario de Noa","Crepusculo","Juego de Tronos"] },
+		{"Categoria": "Terror", "Producciones": ["Crepusculo","Veronica","Tiburón"] },
+		{"Categoria": "Acción", "Producciones": ["Vengadores","Cazafantasmas","Tiburón"] },
+		{"Categoria": "Ciencia Ficción", "Producciones": ["Juego de Tronos","Arrow","Tiburón"] },
+		{"Categoria": "Drama", "Producciones": ["Diario de Noa","Veronica","Crepusculo"] },
+		{"Categoria": "Fantasía", "Producciones": ["Juego de Tronos","Embrujadas"] },
+		{"Categoria": "Musical", "Producciones": ["Diario de Noa","Embrujadas"] },
+		{"Categoria": "Animacion", "Producciones": ["Carmen Sandiego"] }
+	],
+
+	"AlmacenAsignarActores": [
+		{"Actor": "Alejandro" , "Producciones": [{"Nombre": "Vengadores", "Papel": "Hulk", "Principal": true },{"Nombre": "Tomb Raider", "Papel": "Cuidadano", "Principal": false },{"Nombre": "Crepusculo", "Papel": "Cuidadano", "Principal": true }]},
+		{"Actor": "Tom" , "Producciones": [{"Nombre": "Vengadores", "Papel": "Extra", "Principal": false },{"Nombre": "Cazafantasmas", "Papel": "Cuidadano", "Principal": false }]},
+		{"Actor": "Johnny" , "Producciones": [{"Nombre": "Veronica", "Papel": "Cuidadano", "Principal": false },{"Nombre": "Tiburón", "Papel": "Cuidadano", "Principal": false },{"Nombre": "Diario de Noa", "Papel": "Cuidadano", "Principal": false }]},
+		{"Actor": "Jessica" , "Producciones": [{"Nombre": "Tiburón", "Papel": "Cuidadano", "Principal": false },{"Nombre": "Diario de Noa", "Papel": "Cuidadano", "Principal": false }]},
+		{"Actor": "Angelina" , "Producciones": [{"Nombre": "Tomb Raider", "Papel": "Lara Croft", "Principal": true }]},
+		{"Actor": "Sandra" , "Producciones": [{"Nombre": "Embrujadas", "Papel": "Cuidadano", "Principal": false }]}
+	],
+
+	"AlmacenAsignarDirectores": [
+		{"Director": "Keanu" , "Producciones": ["Vengadores","Tomb Raider","Crepusculo"]},
+		{"Director": "Brad" , "Producciones": ["Cazafantasmas","Veronica"]},
+		{"Director": "Evan" , "Producciones": ["Tiburón","Diario de Noa"]}
+	],
+
+	"AlmacenProducciones": [
+		{	"Imagen": "http://www.alec.es/resource21",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Sat Nov 10 2012 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Synopsis": "Un billonario mujeriego que se presumía había fallecido, regresa a casa luego de cinco años de quedar atrapado en una isla remota, él esconde los cambios creados por la experiencia, llevando una vida secreta en la noche, corrigiendo actos erróneos.",
+			"Temporadas": [
+				{"Titulo": "Temporada 1", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 180, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Chino", "Japones"]},
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 2", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [] , "Subtitulos": [] },
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 3", "Episodios": []}
+			],
+			"Tipo": "Serie",
+			"Titulo": "Arrow"
+		},
+		{	"Imagen": "http://www.alec.es/resource6",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Mon Feb 18 2019 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Synopsis": "Carmen Sandiego es una serie de acción y aventura animada de Netflix con elementos educativos, basada en la franquicia de medios del mismo nombre creada por Broderbund.",
+			"Temporadas":[{"Titulo": "Temporada 1","Episodios": [
+				{"Titulo": "Episodio 1"},
+				{"Duracion": 180, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Chino", "Japones"]},
+				{"Latitud": 12, "Longitud": 20},
+				{"Titulo": "Episodio 2"},
+				{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+				{"Latitud": 21, "Longitud": 30}
+			]},
+			{"Titulo": "Temporada 2","Episodios": [
+				{"Titulo": "Episodio 1"},
+				{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+				{"Latitud": 12, "Longitud": 20},
+				{"Titulo": "Episodio 2"},
+				{"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+				{"Latitud": 21, "Longitud": 30}
+			]}
+			],
+			"Tipo": "Serie",
+			"Titulo": "Carmen Sandiego"
+		},
+		{	"Imagen": "",
+			"Localizacion": "",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Tue Aug 09 2016 00:00:00 GMT+0200 (hora de verano de Europa central)",
+			"Recurso": {"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+			"Synopsis": "Tras treinta años de tranquilidad, los fantasmas y demonios han vuelto a Nueva York para aterrorizar a los ciudadanos. Esta vez, una investigadora de lo paranormal, una física, una ingeniera nuclear y una trabajadora del metro conformarán un equipo para detenerlos.",
+			"Tipo": "Pelicula",
+			"Titulo": "Cazafantasmas"
+		},
+		{	"Imagen": "",
+			"Localizacion": "",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Mon Jan 05 2009 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Recurso": {"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+			"Synopsis": "Bella Swan se va a vivir con su padre al pequeño pueblo de Forks, donde conoce a Edward, un atractivo y misterioso chico del que se enamora y quien esconde un gran secreto: es un vampiro. Pero la familia del chico guarda una peculiaridad, y es que no se alimenta de sangre humana.",
+			"Tipo": "Pelicula",
+			"Titulo": "Crepusculo"
+		},
+		{	"Imagen": "",
+			"Localizacion": "",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Mon Nov 22 2004 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Recurso": {"Duracion": 50, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Aleman", "Ingles"]},
+			"Synopsis": "Un hombre le cuenta a una mujer la historia de dos jóvenes que se volvieron amantes en la Carolina del Norte de 1940.",
+			"Tipo": "Pelicula",
+			"Titulo": "Diario de Noa"
+		},
+		{	"Imagen": "http://www.alec.es/resource21",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Sat Nov 07 1998 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Synopsis": "Un grupo de hermanas viven juntas en una casa en San Francisco y descubren que son hechiceras. Ellas llevan una vida normal en la sociedad y cada una tiene poderes especiales que los utilizan en su lucha contra el mal.",
+			"Temporadas": [
+				{"Titulo": "Temporada 1", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 180, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Chino", "Japones"]},
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 2", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [] , "Subtitulos": [] },
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 3", "Episodios": []}
+			],
+			"Tipo": "Serie",
+			"Titulo": "Embrujadas"
+		},
+		{	"Imagen": "http://www.alec.es/resource21",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Wed Jun 15 2011 00:00:00 GMT+0200 (hora de verano de Europa central)",
+			"Synopsis": "Movidas raras sobre la conquista de reinos",
+			"Temporadas": [
+				{"Titulo": "Temporada 1", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 180, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Chino", "Japones"]},
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 2", "Episodios": [
+					{"Titulo": "Episodio 1"},
+					{"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [] , "Subtitulos": [] },
+					{"Latitud": 12, "Longitud": 20},
+					{"Titulo": "Episodio 2"},
+					{"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+					{"Latitud": 21, "Longitud": 30}
+				]},
+				{"Titulo": "Temporada 3", "Episodios": []}
+			],
+			"Tipo": "Serie",
+			"Titulo": "Juego de Tronos"
+		},
+		{	"Imagen": "",
+			"Localizacion": "",
+			"Nacionalidad": "Americana",
+			"Publicacion": "Mon Jan 19 1976 00:00:00 GMT+0100 (hora estándar de Europa central)",
+			"Recurso": {"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+			"Synopsis": "Un gigantesco tiburón blanco amenaza a los habitantes y turistas de un pueblo costero.",
+			"Tipo": "Pelicula",
+			"Titulo": "Tiburón"
+		},
+		{	"Imagen": "",
+			"Localizacion": {"Latitud": 80, "Longitud": 124},
+			"Nacionalidad": "Americana",
+			"Publicacion": "Mon Apr 16 2018 00:00:00 GMT+0200 (hora de verano de Europa central)",
+			"Recurso": {"Duracion": 120, "Link": "http://www.alec.com/resource", "Audios": [], "Subtitulos": []},
+			"Synopsis": "La joven Lara Croft, cansada de malvivir trabajando como mensajera en bicicleta, lo abandona todo y parte en busca de su padre, un aventurero que desapareció en una isla legendaria que se encuentra en algún lugar de la costa de Japón.",
+			"Tipo": "Pelicula",
+			"Titulo": "Tomb Raider"
+		},
+		{	"Imagen": "",
+			"Localizacion": {"Latitud": 80, "Longitud": 124},
+			"Nacionalidad": "Americana",
+			"Publicacion": "Tue Jun 05 2012 00:00:00 GMT+0200 (hora de verano de Europa central)",
+			"Recurso": {"Duracion": 180, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Chino", "Japones"]},
+			"Synopsis": "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
+			"Tipo": "Pelicula",
+			"Titulo": "Vengadores"
+		},
+		{	"Imagen": "",
+			"Localizacion": "",
+			"Nacionalidad": "Española",
+			"Publicacion": "Mon Sep 25 2017 00:00:00 GMT+0200 (hora de verano de Europa central)",
+			"Recurso": {"Duracion": 25, "Link": "http://www.alec.com/resource", "Audios": ["Español", "Ingles"], "Subtitulos": ["Ruso", "Ingles"]},
+			"Synopsis": "En el Madrid de los años 90, un grupo de amigas hacen una sesión de ouija. Al acabar, una de las adolescentes es poseída por unas presencias sobrenaturales que amenazan con hacerle daño a ella y a toda su familia.",
+			"Tipo": "Pelicula",
+			"Titulo": "Veronica"
+		}
+    ]
+}

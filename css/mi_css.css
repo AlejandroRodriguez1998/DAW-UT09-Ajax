@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* Autor:
+ * Fecha:
+ * Módulo: DIW
+ */
+
+.centrado-porcentual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+body{
+    padding-top: 5px;
+}
+
+header {
+    padding-bottom: 6px;
+}
+
+header, footer, body {
+    background-color: #1C2833;
+}
+
+main {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+#nombrePag {
+    margin-top: 25px;
+    display: inline-block;
+    color: white;
+}
+
+#columnaContenido {
+    margin-top: 26px;
+}
+
+#tarjetasZona > div{
+    margin-top: 15px;
+}
+
+.ocultar {
+    display: none;
+}
+
+#volverAtras {
+    margin-left: 18px;
+    background-color: #1C2833;
+    border-color:#1C2833;
+}
+
+.botonMismoColor {
+    background-color: #1C2833;
+    border-color:#1C2833;
+}
+
+.botonMismoColor:hover {
+    background-color: #1C2833;
+    border-color:#1C2833;
+}
+
+.iniciarSesion {
+    width: 300px;
+}
+
+#actorDirector {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+textarea {
+	resize: none;
+}
+
+.error {
+    color: red;
+}
+
+.borrarBoton {
+    border: 0;
+    background-color: inherit;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.fade .show {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.padding {
+    padding: 1%;
+}
+
+/*Css reloj*/
+
+#contenedor{
+	margin: 5% 4.5%;
+	height: 115px;
+}
+.reloj{
+	font-size: 35px;
+	font-family: Courier,sans-serif;
+	color: #1C2833;
+}
+
+#inicio {
+    background: url(../img/play.png);
+}
+
+#parar {
+    background: url(../img/pauseDesa.png);
+}
+
+#reinicio {
+    background: url(../img/stopDesa.png);
+}
+
+.boton{
+	outline: none;
+    border: none;
+    width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
