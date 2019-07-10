@@ -3,8 +3,6 @@ var video = VideoSystem.getInstance();
 var arrayRecursos = video.resources;
 var arraySeason = video.seasons;
 
-document.cookie = "username=prueba";
-
 function comprobarCookie(nombreValor) {
     var nombre = nombreValor + "=";
     var cookieArray = document.cookie.split(';');
